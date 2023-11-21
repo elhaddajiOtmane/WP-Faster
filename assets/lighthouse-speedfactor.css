@@ -1,0 +1,402 @@
+:root {
+    --color-main: #29275F;
+    --color-link: #2955EE;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-purple: #5336ca;
+
+    --color-cotton-candy: #FD95B4;  /* Cotton Candy */
+    --color-clear-skies: #A6DAF0;   /* Clear Skies */
+    --color-soft-lavender: #E1BDDF; /* Soft Lavender */
+    --color-ripe-peach: #EA987B;    /* Ripe Peach */
+    --color-zest: #D3BF2B;          /* Zest */
+
+    --color-primary: #F64B53;
+    --color-secondary: #cf4327;
+    --color-tertiary: #4C56BA;
+    --color-faded: #A9B2C8;
+
+    --color-neon-green-transparent: rgba(5, 203, 99, 0.2);
+
+    --color-complementary: #212b36;
+
+    --flatui-midnight-blue: #2c3e50;
+    --flatui-turquoise: #1abc9c;
+    --flatui-green-sea: #16a085;
+    --flatui-asbestos: #7f8c8d;
+
+    --color-timing-dns: #009688;
+}
+
+
+
+.sf-url-size-list {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    line-height: 1.75;
+    word-break: break-all;
+    margin: 24px 0 0 0;
+}
+.sf-url-size-list code {
+    font-size: inherit;
+}
+.sf-url-size-list a,
+.sf-url-size-list a:link,
+.sf-url-size-list a:visited {
+    text-decoration: none;
+}
+.sf-url-size-list a:hover {
+    text-decoration: underline;
+}
+.sf-url-size-list b {
+    color: var(--flatui-green-sea);
+    font-weight: 700;
+}
+.sf-url-size-list i {
+    color: #e74c3c;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sf-flex {
+	display: flex;
+	flex-direction: row;
+}
+.sf-flex .sf-flex-child {
+	flex: 1;
+}
+
+.is-good,
+.sf-color--green {
+    color: var(--flatui-turquoise);
+}
+.is-bad,
+.sf-color--red {
+    color: #e74c3c;
+}
+.is-ugly,
+.sf-color--yellow {
+    color: #e67e22;
+}
+
+#scores {
+    display: flex;
+    flex-wrap: wrap;
+}
+#scores div {
+    flex-basis: 31%;
+    margin: 1%;
+}
+
+
+
+.sf-header--primary {
+	font-size: 16px;
+    margin: 16px 0 12px 0;
+	padding: 16px 0 12px 0;
+    font-weight: 600;
+}
+.sf-header--secondary {
+	font-size: 18px;
+    margin: 24px 0 16px 0;
+    color: var(--flatui-midnight-blue);
+    font-weight: 400;
+}
+.sf-header--secondary small {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a9b2c8;
+}
+
+h2.sf-heading--secondary,
+.page h2.sf-heading--secondary {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    padding: 8px 0 16px 0;
+}
+
+.sf-header--tertiary {
+    font-size: 20px;
+    margin: 18px 0 12px 0;
+}
+.sf-header--tertiary small {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #a9b2c8;
+}
+
+
+
+.sf-WPFaster -result em {
+    font-size: 15px;
+    font-style: normal;
+    white-space: nowrap;
+}
+
+
+/**
+ * https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.css
+ */
+
+/*
+ * DOM element rendering detection
+ * https://davidwalsh.name/detect-node-insertion
+ */
+@keyframes chartjs-render-animation {
+    from { opacity: 0.99; }
+    to { opacity: 1; }
+}
+
+.chartjs-render-monitor {
+	animation: chartjs-render-animation 0.001s;
+}
+
+/*
+ * DOM element resizing detection
+ * https://github.com/marcj/css-element-queries
+ */
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+	position: absolute;
+	direction: ltr;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	pointer-events: none;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.chartjs-size-monitor-expand > div {
+	position: absolute;
+	width: 1000000px;
+	height: 1000000px;
+	left: 0;
+	top: 0;
+}
+
+.chartjs-size-monitor-shrink > div {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	left: 0;
+	top: 0;
+}
+/**/
+
+
+
+canvas#chartjs-key-factors,
+canvas#chartjs-speed-factors,
+canvas#chartjs-payload,
+canvas#chartjs-payload-requests,
+canvas#chartjs-security,
+canvas#chartjs-seofactor,
+canvas#ttfb-bar-values {
+    width: 100%;
+    height: 300px;
+	margin: 0 0 24px 0;
+}
+
+
+
+.sf-option {
+    margin: 0 0 16px 0;
+}
+
+
+
+/*
+ * Flex Panels
+ *
+ */
+
+.sf-panel-item--dead-center {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar .progress-bar__background {
+    stroke: #29275F;
+    stroke-width: 2px;
+}
+.progress-bar .progress-bar__progress {
+    stroke-linecap: initial;
+}
+
+.sf-shadow-dreamy {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+                0 2px 4px rgba(0, 0, 0, 0.05),
+                0 4px 8px rgba(0, 0, 0, 0.05),
+                0 8px 16px rgba(0, 0, 0, 0.05),
+                0 16px 32px rgba(0, 0, 0, 0.05),
+                0 32px 64px rgba(0, 0, 0, 0.05);
+}
+.sf-shadow-discrete {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.025),
+                0 2px 4px rgba(0, 0, 0, 0.025),
+                0 4px 8px rgba(0, 0, 0, 0.025),
+                0 8px 16px rgba(0, 0, 0, 0.025);
+}
+
+
+
+
+/**
+ * Sparkline
+ */
+.sparkline--svg {
+    margin: 16px 0 0 0;
+}
+.sparkline--tooltip {
+    font-size: 12px;
+    white-space: nowrap;
+}
+.sparkline--cursor {
+    stroke: #29275F;
+}
+.sparkline--spot {
+    fill: #29275F;
+    stroke: #29275F;
+}
+.sparkline--fill {
+    fill: rgba(41, 39, 95, 0.35);
+}
+
+
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+
+.sf-boxie {
+    padding: 12px;
+    margin: 4px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+
+
+
+
+a.sf-button--rounded,
+.sf-button--rounded {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 12px 32px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: inherit;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 64px;
+}
+
+
+
+
+.col-item--value {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.grid-container {
+    padding: 16px;
+}
+
+
+/**
+ * Onboarding or tour
+ * https://codepen.io/enahom99/pen/EEgPQP
+ * https://codepen.io/sdthornton/pen/JRqQWb
+ * https://booking.design/what-we-learned-onboarding-2-million-hosts-on-booking-com-99412c03fa3a
+ *
+ * Homepage brand
+ * https://codepen.io/fossheim/pen/wvBYEgY?editors=1100
+ * @type {[type]}
+ */
+
+
+.chart-container .legend-dataset-text {
+    fill: #000000 !important;
+    font-weight: 400 !important;
+}
+
+
+
+.frappe-chart--group {
+    position: relative;
+}
+.frappe-chart--bar {
+    display: flex;
+    width: 100%;
+    margin: 48px 0 16px 0;
+    color: #ffffff;
+    background-color: #5b25c9;
+    overflow: hidden;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.25);
+}
+.frappe-chart--bar-line,
+.frappe-chart--bar-line-end {
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.frappe-chart--bar-line {
+    flex: 1;
+    background-color: #63bde4;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.25);
+}
+.frappe-chart--legend {
+    font-size: 12px;
+    text-align: center;
+}
+.frappe-chart--legend em {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px 0 0;
+}
+.frappe-chart--legend em:nth-child(1) {
+    background-color: #63bde4;
+}
+.frappe-chart--legend em:nth-child(2) {
+    margin-left: 24px;
+    background-color: #5b25c9;
+}
+
+
+
+
+.lhf-sf-metric-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+.sf-font-size-36,
+.lhf-sf-metric-value {
+    font-size: 24px;
+    font-weight: 600;
+}
+.sf-font-size-36 code,
+.lhf-sf-metric-value code {
+    font-weight: 400;
+}
+.lhf-sf-metric-value.lhf-sf-metric-value--request {
+    color: #666666;
+}
+
+
+.chart-container {
+    font-family: 'Proxima Vara', var(--font-ui);
+}
